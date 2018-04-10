@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  box-sizing: border-box; }
+
+body, html {
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 100%; }
+
+body::-webkit-scrollbar {
+  width: 1em; }
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #424242; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.8);
+  outline: 1px solid slategrey; }
+
+/*Navigation Bar*/
+nav {
+  width: 100%; }
+
+.navigationBar {
+  overflow: hidden;
+  background-color: black;
+  font-family: 'Montserrat', cursive;
+  width: 100%; }
+  .navigationBar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; }
+    .navigationBar a:hover {
+      background-color: #a90b1f;
+      color: white;
+      animation: fadein 0.5s; }
+  .navigationBar .icon {
+    display: none; }
+
+a.icon {
+  font-size: 17px !important;
+  color: #a90b1f; }
+
+a#nav-logo-i {
+  position: absolute;
+  right: 0; }
+
+/**/
+.container {
+  height: 100%;
+  max-width: 100%; }
+
+.large {
+  background: url("http://www.kinyu-z.net/data/wallpapers/147/1220211.jpg") center center no-repeat;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  animation: fadein 1s; }
+
+.red {
+  color: #a90b1f; }
+
+.image-logo {
+  width: 20rem;
+  position: absolute;
+  bottom: 65%; }
+
+.fade-Border {
+  width: 100%;
+  background-color: black;
+  height: 50px;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+  animation: fadein 1s; }
+
+#information {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 50px; }
+
+.mobile-logo {
+  display: none; }
+
+.gallery {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  background-image: url(http://data.freehdw.com/long-road-to-the-mountain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50%; }
+
+.large-image-grid {
+  line-height: 0;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  position: relative; }
+
+.shape {
+  width: 20%;
+  position: absolute;
+  overflow-x: hidden;
+  background-color: white;
+  right: 0;
+  height: 80px;
+  z-index: 9999999;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 100%);
+  border: transparent; }
+
+.block {
+  height: 250px;
+  width: 100%;
+  padding: 50px 0 0 20px;
+  text-align: left;
+  color: white;
+  font-size: 25px;
+  line-height: 0; }
+  .block p {
+    padding-left: 150px; }
+
+#used-cars {
+  background-image: url("https://dealerimages.dealereprocess.com/image/upload/1103714.jpg"); }
+
+#new-cars {
+  background-image: url("https://car-images.bauersecure.com/pagefiles/30099/1752x1168/bmwi8feature-001.jpg?mode=max&quality=90&scale=down"); }
+
+#find {
+  background-image: url("http://oobrien.com/wordpress/wp-content/uploads/2016/07/googlemaps_july2016.jpg"); }
+
+.large-image-grid .tile {
+  min-width: 30%;
+  min-height: 20em;
+  line-height: 1.2;
+  display: inline-block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  border-radius: 25px;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  text-shadow: 2px 2px 2px #000;
+  cursor: pointer;
+  cursor: hand;
+  margin: 5px; }
+  .large-image-grid .tile:before {
+    background-color: rgba(15, 15, 15, 0.5);
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute; }
+  .large-image-grid .tile:hover:before {
+    display: none; }
+  .large-image-grid .tile:hover .textWrapper .content {
+    display: block; }
+    .large-image-grid .tile:hover .textWrapper .content h2 {
+      margin: 0; }
+  .large-image-grid .tile .textWrapper {
+    text-align: center;
+    vertical-align: middle;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: .75em; }
+    .large-image-grid .tile .textWrapper .content {
+      display: none; }
+
+button {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #a90b1f;
+  border-color: #a90b1f; }
+
+.button1 {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  height: 75px;
+  width: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s; }
+
+.first-arrow {
+  animation: fadeArrow 2s infinite;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  float: left; }
+
+.second-arrow {
+  animation: fadeArrow 2s infinite;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+  float: left; }
+
+.third-arrow {
+  animation: fadeArrow 2s infinite;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+  float: left; }
+
+@keyframes fadeArrow {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.button1 img {
+  height: 25px;
+  width: 25px; }
+
+.lower-container {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto; }
+
+img.maserati-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: auto; }
+
+.lower-info {
+  position: relative;
+  color: white;
+  width: 350px;
+  max-height: 100%;
+  max-height: 100%;
+  transform: skew(-20deg);
+  padding: 60px;
+  background-color: black;
+  text-align: center; }
+  .lower-info p {
+    margin-top: 20px; }
+  .lower-info h2 {
+    vertical-align: middle;
+    margin: 0 auto;
+    color: #a90b1f; }
+  .lower-info:nth-child(2) {
+    background-color: #a90b1f;
+    color: white; }
+    .lower-info:nth-child(2) h2 {
+      color: black; }
+
+.info-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  margin-top: 8%;
+  max-height: 100%;
+  text-align: center;
+  justify-content: space-evenly; }
+
+footer {
+  text-align: center;
+  background-color: white;
+  color: black;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px; }
+
+.social-media-links {
+  display: inline-block;
+  margin: 0 auto; }
+  .social-media-links img {
+    height: 50px;
+    width: 50px;
+    margin: 15px; }
+
+.car-wrapper {
+  position: relative;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden; }
+  .car-wrapper img {
+    position: relative;
+    height: 30%;
+    width: 50%; }
+  .car-wrapper h1 {
+    position: absolute;
+    z-index: 999999999;
+    bottom: 80%;
+    font-size: 60px;
+    left: 20%;
+    font-weight: bold;
+    transform: perspective(600px) rotateY(45deg); }
+
+#master-button {
+  z-index: 99999999; }
+
+.container-wrapper {
+  display: none; }
+
+.information-wrapper {
+  position: absolute;
+  max-width: 20%;
+  text-align: center;
+  top: 50%;
+  left: 5%;
+  overflow: hidden;
+  z-index: 999999; }
+
+.line-wrapper {
+  position: absolute;
+  width: 30%;
+  text-align: center;
+  top: 33%;
+  left: 13%;
+  overflow: hidden;
+  z-index: 999999; }
+
+.button-hover {
+  overflow: auto;
+  position: absolute;
+  left: 35%;
+  top: 28%;
+  color: black;
+  z-index: 99999;
+  float: right; }
+  .button-hover:hover {
+    width: 100%;
+    height: 100%; }
+
+.new-cars-header {
+  background-image: url(https://images.unsplash.com/photo-1471174617910-3e9c04f58ff5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=092cd4f8bbc80ac2395d2debfac73df4&auto=format&fit=crop&w=1350&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25rem;
+  margin-top: -50px;
+  text-align: center; }
+
+.header-text {
+  color: white;
+  font-size: 4rem;
+  line-height: 4rem;
+  padding: 8rem 0;
+  display: block; }
+
+.car-listing {
+  margin: 4rem; }
+  .car-listing .car-listing-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem; }
+    .car-listing .car-listing-wrapper .car {
+      width: 100%;
+      box-shadow: 0 5px 2rem rgba(0, 0, 0, 0.15);
+      transition: all 0.3s; }
+      .car-listing .car-listing-wrapper .car:hover {
+        box-shadow: 0 5px 3rem rgba(0, 0, 0, 0.25); }
+      .car-listing .car-listing-wrapper .car img {
+        width: 100%; }
+      .car-listing .car-listing-wrapper .car .car-details {
+        padding: 1rem;
+        text-align: center; }
+        .car-listing .car-listing-wrapper .car .car-details ul {
+          margin: 1rem 0;
+          padding: 0; }
+          .car-listing .car-listing-wrapper .car .car-details ul li {
+            list-style: none; }
+
+/*# sourceMappingURL=index-CSS.css.map */
