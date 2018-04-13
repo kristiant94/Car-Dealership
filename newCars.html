@@ -7,23 +7,22 @@
     <link rel="stylesheet" type="text/css" href="css/index-CSS.css">
     <link rel="stylesheet" type="text/css" href="mobile.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Work+Sans:400,700" rel="stylesheet">
-    <title>MP | Homepage</title>
+    <title>MP | New Cars</title>
 </head>
 <body>
 <!-- Navigation Bar -->
-<nav class="navigation">
-    <div class="navigationBar" id="thisNav">
-        <a href="index.html">Home</a>
-        <a href="#oldcars">Used Cars</a>
-        <a href="newCars.html">New Cars</a>
-        <a href="#about">Contact</a>
-        <div class="nav-logo">
-            <a href="#" id="nav-logo-i">
-                <img src="images/logo-light-small.svg" style="width: 2rem" alt="brand-logo">
-            </a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="dropDown()">&#9776;</a>
-    </div>
+<nav class="navbar">
+    <a href="" class="logo">
+        <img src="images/logo-light-small.svg" alt="brand-logo">
+    </a>
+    <input class="menu-btn" type="checkbox" id="menu-btn"/>
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="newCars.html">New Cars</a></li>
+        <li><a href="">Used Cars</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
 </nav>
 <!-- Intro Border -->
 <div class="fade-Border"></div>
@@ -35,126 +34,461 @@
 <section class="car-listing">
     <div class="car-listing-wrapper">
         <div class="car">
-            <img src="https://d1ek71enupal89.cloudfront.net/images/blocks_png/FORD/FIESTA/3DR/17ForFieStl3drBluFR1_800.jpg"
-                 alt="Car">
+            <img src="images/fiesta.jpg"
+                 alt="Ford Fiesta">
             <div class="car-details">
                 <h2>Ford Fiesta</h2>
                 <h3>£8,400</h3>
                 <ul>
-                    <li>Cruise control</li>
-                    <li>Electric front windows</li>
-                    <li>First aid kit</li>
-                    <li>Front fog lights</li>
-                    <li>Heated door mirrors</li>
+                    <li>Cruise Control</li>
+                    <li>Electric Front Windows</li>
+                    <li>First Aid Kit</li>
+                    <li>Front Fog Lights</li>
+                    <li>Heated Door Mirrors</li>
                 </ul>
             </div>
+            <button data-modal="fiestaModal" class="newcar-button">Find out more:</button>
         </div>
         <div class="car">
-            <img src="http://www.lovelochlomond.com/mediaLibrary/images/english/73666.jpg"
-                 alt="Car">
+            <img src="images/focus.jpg"
+                 alt="Ford Focus">
             <div class="car-details">
                 <h2>Ford Focus</h2>
                 <h3>£12,400</h3>
                 <ul>
-                    <li>Cruise control</li>
-                    <li>Electric front windows</li>
-                    <li>First aid kit</li>
-                    <li>Front fog lights</li>
-                    <li>Heated door mirrors</li>
+                    <li>Cruise Control</li>
+                    <li>Electric Front Windows</li>
+                    <li>First Aid Kit</li>
+                    <li>Front Fog Lights</li>
+                    <li>Heated Door Mirrors</li>
                 </ul>
             </div>
+            <button data-modal="focusModal" class="newcar-button">Find out more:</button>
         </div>
         <div class="car">
-            <img src="http://lovelochlomond.com/mediaLibrary/images/english/73668.jpg"
-                 alt="Car">
+            <img src="images/corsa.jpg"
+                 alt="Vauxhall Corsa">
             <div class="car-details">
                 <h2>Vauxhall Corsa</h2>
                 <h3>£9,260</h3>
                 <ul>
-                    <li>Cruise control</li>
-                    <li>Electric front windows</li>
-                    <li>First aid kit</li>
-                    <li>Front fog lights</li>
-                    <li>Heated door mirrors</li>
+                    <li>Cruise Control</li>
+                    <li>Electric Front Windows</li>
+                    <li>IntelliLink System</li>
+                    <li>17" Alloy Wheels</li>
+                    <li>Heated Door Mirrors</li>
                 </ul>
             </div>
+            <button data-modal="corsaModal" class="newcar-button">Find out more:</button>
         </div>
         <div class="car">
-            <img src="https://i2.wp.com/www.stjshopping.co.uk/wp-content/uploads/2015/06/13Fia500Pop3drWhiFR1-USE-THIS-ONE.jpg"
-                 alt="Car">
+            <img src="images/500.jpg"
+                 alt="Fiat 500">
             <div class="car-details">
                 <h2>Fiat 500</h2>
                 <h3>£7,100</h3>
                 <ul>
-                    <li>Cruise control</li>
-                    <li>Electric front windows</li>
-                    <li>Front fog lights</li>
-                    <li>Heated door mirrors</li>
+                    <li>Cruise Control</li>
+                    <li>Electric Front Windows</li>
+                    <li>Front Fog Lights</li>
+                    <li>15" Alloy Wheels</li>
+                    <li>Heated Door Mirrors</li>
                 </ul>
             </div>
+            <button data-modal="500Modal" class="newcar-button">Find out more:</button>
         </div>
         <div class="car">
-            <img src="https://d1ek71enupal89.cloudfront.net/images/blocks_png/FORD/FIESTA/3DR/17ForFieStl3drBluFR1_800.jpg"
-                 alt="Car">
+            <img src="images/swift.jpg"
+                 alt="Suzuki Swift">
             <div class="car-details">
-                <h2>Ford Fiesta</h2>
+                <h2>Suzuki Swift</h2>
                 <h3>£8,400</h3>
                 <ul>
-                    <li>Cruise control</li>
-                    <li>Electric front windows</li>
-                    <li>First aid kit</li>
-                    <li>Front fog lights</li>
-                    <li>Heated door mirrors</li>
+                    <li>Cruise Control</li>
+                    <li>Electric Front Windows</li>
+                    <li>Front Fog Lights</li>
+                    <li>Heated Door Mirrors</li>
                 </ul>
             </div>
+            <button data-modal="swiftModal" class="newcar-button">Find out more:</button>
         </div>
         <div class="car">
-            <img src="https://d1ek71enupal89.cloudfront.net/images/blocks_png/FORD/FIESTA/3DR/17ForFieStl3drBluFR1_800.jpg"
-                 alt="Car">
+            <img src="images/x-trail.jpg"
+                 alt="Nissan X-Trail">
             <div class="car-details">
-                <h2>Ford Fiesta</h2>
-                <h3>£8,400</h3>
+                <h2>Nissan X-Trail</h2>
+                <h3>£16,400</h3>
                 <ul>
-                    <li>Cruise control</li>
-                    <li>Electric front windows</li>
-                    <li>First aid kit</li>
-                    <li>Front fog lights</li>
-                    <li>Heated door mirrors</li>
+                    <li>Head Up Display</li>
+                    <li>Cruise Control</li>
+                    <li>Keyless Start</li>
+                    <li>Front Fog Lights</li>
+                    <li>Heated Door Mirrors</li>
                 </ul>
             </div>
+            <button data-modal="xtrailModal" class="newcar-button">Find out more:</button>
         </div>
         <div class="car">
-            <img src="https://d1ek71enupal89.cloudfront.net/images/blocks_png/FORD/FIESTA/3DR/17ForFieStl3drBluFR1_800.jpg"
-                 alt="Car">
+            <img src="images/c1.jpg"
+                 alt="Citroen C1">
             <div class="car-details">
-                <h2>Ford Fiesta</h2>
+                <h2>Citroen C1</h2>
                 <h3>£8,400</h3>
                 <ul>
-                    <li>Cruise control</li>
-                    <li>Electric front windows</li>
-                    <li>First aid kit</li>
-                    <li>Front fog lights</li>
-                    <li>Heated door mirrors</li>
+                    <li>Cruise Control</li>
+                    <li>Electric Front Windows</li>
+                    <li>First Aid Kit</li>
+                    <li>Front Fog Lights</li>
+                    <li>Heated Door Mirrors</li>
                 </ul>
             </div>
+            <button data-modal="c1Modal" class="newcar-button">Find out more:</button>
         </div>
         <div class="car">
-            <img src="https://d1ek71enupal89.cloudfront.net/images/blocks_png/FORD/FIESTA/3DR/17ForFieStl3drBluFR1_800.jpg"
-                 alt="Car">
+            <img src="images/insignia.jpg"
+                 alt="Vauxhall Insignia">
             <div class="car-details">
-                <h2>Ford Fiesta</h2>
-                <h3>£8,400</h3>
+                <h2>Vauxhall Insignia</h2>
+                <h3>£11,400</h3>
                 <ul>
-                    <li>Cruise control</li>
-                    <li>Electric front windows</li>
-                    <li>First aid kit</li>
-                    <li>Front fog lights</li>
-                    <li>Heated door mirrors</li>
+                    <li>Cruise Control</li>
+                    <li>Keyless Entry & Start</li>
+                    <li>First Aid Kit</li>
+                    <li>Front Fog Lights</li>
+                    <li>Heated Seats & Door Mirrors</li>
                 </ul>
             </div>
+            <button data-modal="insigniaModal" class="newcar-button">Find out more:</button>
         </div>
     </div>
 </section>
+
+<div id="fiestaModal" class="modal">
+    <div class="modal-content">
+        <a class="close">&times;</a>
+        <div class="car">
+            <img src="images/fiesta.jpg"
+                 alt="Ford Fiesta">
+            <div class="car-details">
+                <h2>Ford Fiesta</h2>
+                <h3>£8,400</h3>
+                <ul>
+                    <li>Cruise Control</li>
+                    <li>Electric Front Windows</li>
+                    <li>First Aid Kit</li>
+                    <li>Front Fog Lights</li>
+                    <li>Heated Door Mirrors</li>
+                </ul>
+            </div>
+        </div>
+        <div class="car-stats">
+            <div class="stat">
+                <h3>Hatchback</h3>
+            </div>
+            <div class="stat">
+                <h3>1.0l</h3>
+            </div>
+            <div class="stat">
+                <h3>Manual</h3>
+            </div>
+            <div class="stat">
+                <h3>Petrol</h3>
+            </div>
+            <div class="stat">
+                <h3>3 doors</h3>
+            </div>
+            <div class="stat">
+                <h3>5 seats</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="focusModal" class="modal">
+    <div class="modal-content">
+        <a class="close">&times;</a>
+        <div class="car">
+            <img src="images/focus.jpg"
+                 alt="Ford Focus">
+            <div class="car-details">
+                <h2>Ford Focus</h2>
+                <h3>£12,400</h3>
+                <ul>
+                    <li>Cruise Control</li>
+                    <li>Electric Front Windows</li>
+                    <li>First Aid Kit</li>
+                    <li>Front Fog Lights</li>
+                    <li>Heated Door Mirrors</li>
+                </ul>
+            </div>
+        </div>
+        <div class="car-stats">
+            <div class="stat">
+                <h3>Hatchback</h3>
+            </div>
+            <div class="stat">
+                <h3>1.4l</h3>
+            </div>
+            <div class="stat">
+                <h3>Manual</h3>
+            </div>
+            <div class="stat">
+                <h3>Petrol</h3>
+            </div>
+            <div class="stat">
+                <h3>5 doors</h3>
+            </div>
+            <div class="stat">
+                <h3>5 seats</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="corsaModal" class="modal">
+    <div class="modal-content">
+        <a class="close">&times;</a>
+        <div class="car">
+            <img src="images/corsa.jpg"
+                 alt="Vauxhall Corsa">
+            <div class="car-details">
+                <h2>Vauxhall Corsa</h2>
+                <h3>£9,260</h3>
+                <ul>
+                    <li>Cruise Control</li>
+                    <li>Electric Front Windows</li>
+                    <li>IntelliLink System</li>
+                    <li>17" Alloy Wheels</li>
+                    <li>Heated Door Mirrors</li>
+                </ul>
+            </div>
+        </div>
+        <div class="car-stats">
+            <div class="stat">
+                <h3>Hatchback</h3>
+            </div>
+            <div class="stat">
+                <h3>1.4l</h3>
+            </div>
+            <div class="stat">
+                <h3>Manual</h3>
+            </div>
+            <div class="stat">
+                <h3>Petrol</h3>
+            </div>
+            <div class="stat">
+                <h3>5 doors</h3>
+            </div>
+            <div class="stat">
+                <h3>5 seats</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="500Modal" class="modal">
+    <div class="modal-content">
+        <a class="close">&times;</a>
+        <div class="car">
+            <img src="images/500.jpg"
+                 alt="Fiat 500">
+            <div class="car-details">
+                <h2>Fiat 500</h2>
+                <h3>£7,100</h3>
+                <ul>
+                    <li>Cruise Control</li>
+                    <li>Electric Front Windows</li>
+                    <li>Front Fog Lights</li>
+                    <li>Heated Door Mirrors</li>
+                </ul>
+            </div>
+        </div>
+        <div class="car-stats">
+            <div class="stat">
+                <h3>Hatchback</h3>
+            </div>
+            <div class="stat">
+                <h3>1.2l</h3>
+            </div>
+            <div class="stat">
+                <h3>Automatic</h3>
+            </div>
+            <div class="stat">
+                <h3>Petrol</h3>
+            </div>
+            <div class="stat">
+                <h3>3 doors</h3>
+            </div>
+            <div class="stat">
+                <h3>4 seats</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="swiftModal" class="modal">
+    <div class="modal-content">
+        <a class="close">&times;</a>
+        <div class="car">
+            <img src="images/swift.jpg"
+                 alt="Suzuki Swift">
+            <div class="car-details">
+                <h2>Suzuki Swift</h2>
+                <h3>£8,400</h3>
+                <ul>
+                    <li>Cruise Control</li>
+                    <li>Electric Front Windows</li>
+                    <li>Front Fog Lights</li>
+                    <li>15" Alloy Wheels</li>
+                    <li>Heated Door Mirrors</li>
+                </ul>
+            </div>
+        </div>
+        <div class="car-stats">
+            <div class="stat">
+                <h3>Hatchback</h3>
+            </div>
+            <div class="stat">
+                <h3>1.2l</h3>
+            </div>
+            <div class="stat">
+                <h3>Manual</h3>
+            </div>
+            <div class="stat">
+                <h3>Diesel</h3>
+            </div>
+            <div class="stat">
+                <h3>5 doors</h3>
+            </div>
+            <div class="stat">
+                <h3>5 seats</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="xtrailModal" class="modal">
+    <div class="modal-content">
+        <a class="close">&times;</a>
+        <div class="car">
+            <img src="images/x-trail.jpg"
+                 alt="Nissan X-Trail">
+            <div class="car-details">
+                <h2>Nissan X-Trail</h2>
+                <h3>£16,400</h3>
+                <ul>
+                    <li>Head Up Display</li>
+                    <li>Cruise Control</li>
+                    <li>Keyless Start</li>
+                    <li>Front Fog Lights</li>
+                    <li>Heated Door Mirrors</li>
+                </ul>
+            </div>
+        </div>
+        <div class="car-stats">
+            <div class="stat">
+                <h3>Hatchback</h3>
+            </div>
+            <div class="stat">
+                <h3>1.6l</h3>
+            </div>
+            <div class="stat">
+                <h3>Manual</h3>
+            </div>
+            <div class="stat">
+                <h3>Petrol</h3>
+            </div>
+            <div class="stat">
+                <h3>5 doors</h3>
+            </div>
+            <div class="stat">
+                <h3>5 seats</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="c1Modal" class="modal">
+    <div class="modal-content">
+        <a class="close">&times;</a>
+        <div class="car">
+            <img src="images/c1.jpg"
+                 alt="Citroen C1">
+            <div class="car-details">
+                <h2>Citroen C1</h2>
+                <h3>£8,400</h3>
+                <ul>
+                    <li>Cruise Control</li>
+                    <li>Electric Front Windows</li>
+                    <li>First Aid Kit</li>
+                    <li>Front Fog Lights</li>
+                    <li>Heated Door Mirrors</li>
+                </ul>
+            </div>
+        </div>
+        <div class="car-stats">
+            <div class="stat">
+                <h3>Hatchback</h3>
+            </div>
+            <div class="stat">
+                <h3>1.0l</h3>
+            </div>
+            <div class="stat">
+                <h3>Manual</h3>
+            </div>
+            <div class="stat">
+                <h3>Petrol</h3>
+            </div>
+            <div class="stat">
+                <h3>3 doors</h3>
+            </div>
+            <div class="stat">
+                <h3>4 seats</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="insigniaModal" class="modal">
+    <div class="modal-content">
+        <a class="close">&times;</a>
+        <div class="car">
+            <img src="images/insignia.jpg"
+                 alt="Vauxhall Insignia">
+            <div class="car-details">
+                <h2>Vauxhall Insignia</h2>
+                <h3>£8,400</h3>
+                <ul>
+                    <li>Cruise Control</li>
+                    <li>Keyless Entry & Start</li>
+                    <li>First Aid Kit</li>
+                    <li>Front Fog Lights</li>
+                    <li>Heated Seats & Door Mirrors</li>
+                </ul>
+            </div>
+        </div>
+        <div class="car-stats">
+            <div class="stat">
+                <h3>Hatchback</h3>
+            </div>
+            <div class="stat">
+                <h3>1.5l</h3>
+            </div>
+            <div class="stat">
+                <h3>Manual</h3>
+            </div>
+            <div class="stat">
+                <h3>Petrol</h3>
+            </div>
+            <div class="stat">
+                <h3>5 doors</h3>
+            </div>
+            <div class="stat">
+                <h3>5 seats</h3>
+            </div>
+        </div>
+    </div>
+</div>
 
 <footer>
     <div class="social-media-links">
