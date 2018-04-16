@@ -6,18 +6,11 @@ body, html {
   margin: 0 auto;
   background-color: white;
   color: black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Work Sans", sans-serif;
   max-width: 100%; }
 
-body::-webkit-scrollbar {
-  width: 1em; }
-
-body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px #424242; }
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.8);
-  outline: 1px solid slategrey; }
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif; }
 
 /*Navigation Bar*/
 nav {
@@ -26,7 +19,7 @@ nav {
 .navigationBar {
   overflow: hidden;
   background-color: black;
-  font-family: 'Montserrat', cursive;
+  font-family: 'Montserrat', sans-serif;
   width: 100%; }
   .navigationBar a {
     float: left;
@@ -126,7 +119,7 @@ a#nav-logo-i {
   background-color: white;
   right: 0;
   height: 80px;
-  z-index: 9999999;
+  z-index: 9;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 100%);
   border: transparent; }
 
@@ -200,11 +193,13 @@ button {
   border-color: #a90b1f; }
 
 .button1 {
-  position: relative;
+  position: absolute;
   background-color: transparent;
   border: none;
+  bottom: 0;
+  left: 50%;
   color: white;
-  padding: 0px;
+  padding: 0;
   text-align: center;
   text-decoration: none;
   height: 75px;
@@ -359,13 +354,12 @@ footer {
     width: 100%;
     height: 100%; }
 
+/* New Car Page */
 .new-cars-header {
   background-image: url(https://images.unsplash.com/photo-1471174617910-3e9c04f58ff5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=092cd4f8bbc80ac2395d2debfac73df4&auto=format&fit=crop&w=1350&q=80);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 25rem;
-  margin-top: -50px;
   text-align: center; }
 
 .header-text {
@@ -376,27 +370,277 @@ footer {
   display: block; }
 
 .car-listing {
-  margin: 4rem; }
+  margin: 1.5rem; }
   .car-listing .car-listing-wrapper {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2rem; }
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem; }
     .car-listing .car-listing-wrapper .car {
       width: 100%;
+      position: relative;
       box-shadow: 0 5px 2rem rgba(0, 0, 0, 0.15);
+      -webkit-transition: all 0.3s;
       transition: all 0.3s; }
       .car-listing .car-listing-wrapper .car:hover {
         box-shadow: 0 5px 3rem rgba(0, 0, 0, 0.25); }
       .car-listing .car-listing-wrapper .car img {
         width: 100%; }
       .car-listing .car-listing-wrapper .car .car-details {
-        padding: 1rem;
+        padding: 1rem 1rem 4rem;
         text-align: center; }
         .car-listing .car-listing-wrapper .car .car-details ul {
           margin: 1rem 0;
           padding: 0; }
           .car-listing .car-listing-wrapper .car .car-details ul li {
             list-style: none; }
+    @media screen and (min-width: 576px) {
+      .car-listing .car-listing-wrapper {
+        grid-template-columns: 1fr 1fr; } }
+    @media screen and (min-width: 768px) {
+      .car-listing .car-listing-wrapper {
+        grid-template-columns: 1fr 1fr 1fr; } }
+    @media screen and (min-width: 1200px) {
+      .car-listing .car-listing-wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2rem; } }
+  @media screen and (min-width: 576px) {
+    .car-listing {
+      margin: 2rem; } }
+  @media screen and (min-width: 768px) {
+    .car-listing {
+      margin: 3rem; } }
+  @media screen and (min-width: 1200px) {
+    .car-listing {
+      margin: 4rem; } }
+
+.newcar-button {
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: calc(100% - 2rem);
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid #a90b1f;
+  border-radius: 0;
+  background: white;
+  color: #a90b1f;
+  vertical-align: middle;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  margin: 0 1rem;
+  font-family: 'Montserrat', sans-serif; }
+  .newcar-button:hover {
+    background: #a90b1f;
+    color: white;
+    box-shadow: 0 5px 3rem rgba(0, 0, 0, 0.25); }
+  .newcar-button:focus {
+    outline: none; }
+
+/* New Navbar */
+.navbar {
+  background-color: #000;
+  box-shadow: 0 5px 3rem rgba(0, 0, 0, 0.25);
+  position: fixed;
+  width: 100%;
+  z-index: 999; }
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #000; }
+
+.navbar li a {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  margin: 1rem 2rem;
+  padding: 0.25rem;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.navbar li a:hover,
+.navbar .menu-btn:hover {
+  color: #a90b1f;
+  border-bottom: 2px solid white; }
+
+.navbar .logo {
+  display: block;
+  float: left;
+  padding: 1rem;
+  text-decoration: none; }
+  .navbar .logo img {
+    width: 3em; }
+
+/* menu */
+.navbar .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out; }
+
+/* menu icon */
+.navbar .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 2rem 1rem;
+  position: relative;
+  user-select: none; }
+
+.navbar .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px; }
+
+.navbar .menu-icon .navicon:before,
+.navbar .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%; }
+
+.navbar .menu-icon .navicon:before {
+  top: 5px; }
+
+.navbar .menu-icon .navicon:after {
+  top: -5px; }
+
+/* menu btn */
+.navbar .menu-btn {
+  display: none; }
+
+.navbar .menu-btn:checked ~ .menu {
+  max-height: 240px; }
+
+.navbar .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent; }
+
+.navbar .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg); }
+
+.navbar .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg); }
+
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0; }
+
+/* 48em = 768px */
+@media (min-width: 48em) {
+  .navbar li {
+    float: left; }
+
+  .navbar .menu {
+    clear: none;
+    float: right;
+    max-height: none; }
+
+  .navbar .menu-icon {
+    display: none; } }
+/* Car Modal */
+/* Popup Box */
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 8888;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10vh auto;
+  /* 15% from the top and centered */
+  padding: 2rem;
+  border: 1px solid #888;
+  position: relative; }
+  .modal-content .car {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem; }
+    .modal-content .car h2 {
+      margin-bottom: 1rem; }
+  .modal-content .car-stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    text-align: center;
+    margin-top: 2rem; }
+
+@media (min-width: 1200px) {
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10vh auto;
+    /* 15% from the top and centered */
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 50%;
+    /* Could be more or less, depending on screen size */ } }
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+button.button {
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: #02274a 1px solid;
+  padding: 0 0 3px 0;
+  font-size: 16px; }
+
+button.button:hover {
+  border-bottom: #a99567 1px solid;
+  color: #a99567; }
 
 /*# sourceMappingURL=index-CSS.css.map */
