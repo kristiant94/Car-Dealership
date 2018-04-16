@@ -1,0 +1,490 @@
+/*http://dawnboweryphotography.com/portraits/corporate-headshots/los-angeles-corporate-headshot-photographer/ for headshots  */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    font-family: 'Nixie One', sans-serif;
+    max-width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(66, 66, 66);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.8);
+  outline: 1px solid slategrey;
+}
+
+/*Navigation Bar*/
+nav {
+  width: 100%;
+}
+
+.navigationBar {
+  overflow: hidden;
+  background-color: transparent;
+  font-family: 'Nixie One', cursive;
+  width: 100%;
+}
+
+.navigationBar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navigationBar a:hover {
+  background-color: rgb(169, 11, 31);
+  color: white;
+  animation: fadein 0.5s;
+}
+
+.navigationBar .icon {
+  display: none;
+}
+
+a.icon {
+  font-size: 17px !important;
+  color: rgb(169, 11, 31);
+}
+
+a#nav-logo-i {
+	position: absolute;
+	right: 0;
+  font-family: 'Righteous', cursive;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+a#nav-logo-i:hover {
+	background-color: black;
+	color: white;
+	animation: none;
+}
+/**/
+.container {
+	height: 100%;
+	max-width: 100%;
+}
+
+.large {
+  background: url("https://static1.squarespace.com/static/511526cde4b067782b69109c/t/516f1ae8e4b0cd71972ddfbb/1366235883905/05-corporate-group-photo-ac_130121_172526_9584.JPG-1500px.JPG?format=1500w")center center no-repeat;
+  height: 90%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  animation: fadein 1s;
+}
+
+.red {
+  color: rgb(169, 11, 31);
+}
+
+.image-logo {
+  position: absolute;
+  bottom: 70%;
+  width: 20rem;
+}
+
+.fade-Border {
+	width: 100%;
+	background-color: black;
+	height: 50px;
+	-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,2)), to(rgba(0,0,0,0)));
+  animation: fadein 1s;
+}
+
+#information {
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+    padding: 50px;
+}
+
+.mobile-logo {
+	display: none;
+}
+
+.gallery {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+  background-image:url(https://atgbcentral.com/data/out/32/4172883-white-background-images.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*Width changed to 100% to allow footer to be placed at bottom*/
+  height: 56%;
+}
+
+.large-image-grid {
+  line-height: 0;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+.shape {
+  width: 20%;
+  position: absolute;
+  overflow-x: hidden;
+  background-color: white;
+  right: 0;
+  height: 80px;
+  z-index: 9999999;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 100%);
+  border: transparent;
+}
+
+.block {
+  height: 250px;
+  width: 100%;
+  padding: 50px 0 0 20px;
+  text-align: left;
+  color: white;
+  font-size: 25px;
+  line-height: 0;
+}
+
+.block p {
+  padding-left: 150px;
+}
+/*Code added by Jessie Potter*/
+
+.MTT {
+  font-size: 60px;
+}
+.profile {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: black;
+  font-size: 18px;
+}
+
+.role {
+	font-size: 15px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.large-image-grid .tile {
+  min-width:30%;
+  min-height:20em;
+  line-height: 1.2;
+  display:inline-block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  border-radius: 25px;
+  color:#fff;
+  font-family:"Verdana",sans-serif;
+  text-shadow: 2px 2px 2px #000;
+  cursor: pointer;
+  cursor: hand;
+  margin: 5px;
+}
+
+.large-image-grid .tile:before {
+  background-color: rgba(15,15,15,0.5);
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+.large-image-grid .tile:hover:before {
+  display: none;
+}
+
+.large-image-grid .tile .textWrapper {
+  text-align: center;
+  vertical-align: middle;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: .75em;
+}
+
+.large-image-grid .tile .textWrapper .content {
+  display: none;
+}
+
+.large-image-grid .tile:hover .textWrapper .content {
+  display: block;
+}
+
+.large-image-grid .tile:hover .textWrapper .content h2 {
+  margin: 0;
+}
+
+button {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: rgb(237, 87, 87);
+  border-color: rgb(237, 87, 87);
+}
+/*End of JP*/
+
+.button1 {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  height: 75px;
+  width: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.first-arrow {
+  animation: fadeArrow 2s infinite;
+    -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+    float: left;
+}
+.second-arrow {
+  animation: fadeArrow 2s infinite;
+    -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+    float: left;
+}
+.third-arrow {
+  animation: fadeArrow 2s infinite;
+    -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+    float: left;
+}
+
+@keyframes fadeArrow {
+   0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.button1 img {
+  height: 25px;
+  width: 25px;
+}
+
+.lower-container {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+img.maserati-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
+.lower-info {
+  position: relative;
+  color: white;
+  width: 350px;
+  max-height: 100%;
+  max-height: 100%;
+  transform: skew(-20deg);
+  padding: 60px;
+  background-color: black;
+  text-align: center;
+}
+.lower-info p {
+  margin-top: 20px;
+}
+.info-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  margin-top: 8%;
+  max-height: 100%;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.lower-info h2 {
+  vertical-align: middle;
+  margin: 0 auto;
+  color: rgb(237, 87, 87);
+}
+
+.lower-info:nth-child(2) {
+  background-color: rgb(237, 87, 87);
+  color: white;
+}
+
+.lower-info:nth-child(2) h2  {
+  color: black;
+}
+
+footer {
+  text-align: center;
+  color: black;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.social-media-links {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.social-media-links img {
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+}
+
+.car-wrapper {
+  position: relative;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+    overflow: hidden;
+}
+
+.car-wrapper img {
+  position: absolute;
+  height: 30%;
+  width: 50%;
+
+}
+
+.car-wrapper h1 {
+  position: absolute;
+  z-index: 999999999;
+  bottom: 80%;
+  font-size: 60px;
+  left: 20%;
+  font-weight: bold;
+  transform: perspective( 600px ) rotateY( 45deg );
+}
+
+#master-button {
+  z-index: 99999999;
+}
+
+.container-wrapper {
+  display: none;
+}
+
+
+.information-wrapper {
+  position: absolute;
+  max-width: 20%;
+  text-align: center;
+  top: 50%;
+  left: 5%;
+  overflow: hidden;
+  z-index: 999999;
+}
+
+.line-wrapper {
+  position: absolute;
+  width: 30%;
+  text-align: center;
+  top: 33%;
+  left: 13%;
+  overflow: hidden;
+  z-index: 999999;
+}
+
+.button-hover {
+  overflow: auto;
+  position: absolute;
+  left: 35%;
+  top: 28%;
+  color: black;
+  z-index: 99999;
+  float: right;
+}
+
+.bottom-hover:hover {
+  width: 100%;
+  height: 100%;
+}
