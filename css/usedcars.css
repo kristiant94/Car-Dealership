@@ -1,0 +1,354 @@
+#Slider {
+    font-size: 1.1em;
+}
+.slidergrid {
+    width: 66%;
+}
+.row {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+#Slider .slidergrid {
+    margin: 40px 0 -13px;
+}
+
+.fix:before,
+.fix:after {
+    content: " ";
+    display: table;
+}
+
+.fix:after {
+    clear: both;
+}
+
+.textgrid,
+.slidergrid,
+.articlegrid,
+.gallerygrid,
+.contactusgrid {
+    margin-bottom: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.textgrid {
+    width: 33%;
+}
+
+#Slider .slidergrid {
+    margin: 40px 0 -13px;
+}
+input {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    width: 75%;
+    height: 40px;
+    float: left;
+    padding: 0px 15px;
+}
+
+textarea {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #EEE;
+    margin: 0;
+    width: 75%;
+    height: 130px;
+    float: left;
+    padding: 0px 15px;
+}
+.floatright {
+    float: right;
+}
+
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.vpadding {
+    padding: 40px 0;
+}
+
+.used-cars-header {
+     background-image: url(http://www.polesworth-garage.com/wp-content/uploads/2017/06/Quality-Used-Cars.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 25rem;
+     margin-top: -50px;
+     text-align: center;
+     z-index: 1;
+}
+ .used-cars {
+     position:relative;
+}
+ .form {
+     position:absolute;
+     width:100%;
+     bottom:0;
+     text-align:center;
+}
+ .square a{
+     border-radius:0px !important;
+}
+ .container-single .single{
+     height:38px;
+     line-height:38px;
+}
+ .container-single .single div{
+     width:16px;
+}
+ .container-single .single div b {
+     background-position: -2px 9px;
+     height:35px;
+}
+ .container-active.with-drop .single div b {
+     background-position: -20px 9px;
+}
+ .container-single .single{
+     background:#fff;
+     border-radius:2px;
+     border:none;
+     border-bottom:3px solid rgba(0,0,0,0.3);
+     box-shadow: inset 1px 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+ input{
+     border:0;
+     border-bottom:3px solid rgba(0,0,0,0.3);
+     border-radius:2px;
+     height:38px;
+     padding:0 10px;
+     font-size:13px !important;
+     width:65px;
+     position:relative;
+     top:-1px;
+     outline: none;
+     margin:0 10px 0 0;
+}
+ .checkbox {
+     height:41px;
+     position: relative;
+     display:inline;
+     color:#aaa;
+     padding:0 32px 0 0;
+     top:-3px;
+     margin:0 0 0 12px;
+}
+ .checkbox input[type=checkbox]{
+     display:none;
+}
+ .checkbox .box {
+     cursor: pointer;
+     position: absolute;
+     width: 25px;
+     height: 25px;
+     top: 0;
+     right: 0;
+     background: #fff;
+     border-radius:2px;
+     border-bottom:3px solid rgba(0,0,0,0.3);
+}
+ .checkbox .box:after {
+     content: '';
+     position: absolute;
+     width: 9px;
+     height: 5px;
+     background: transparent;
+     top: 6px;
+     left: 7px;
+     border: 3px solid #fff;
+     border-top: none;
+     border-right: none;
+     -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+     -o-transform: rotate(-45deg);
+     -ms-transform: rotate(-45deg);
+     transform: rotate(-45deg);
+}
+
+ .checkbox .box:hover::after {
+     border-color:#ccc;
+}
+ .checkbox input[type=checkbox]:checked + .box:after {
+     border-color:#a90b1f;
+}
+ .checkbox input[type=checkbox]:checked + .box {
+     background:#fff;
+}
+ .checkbox .text{
+     position:relative;
+     top:4px;
+     cursor:pointer;
+     font-size:14px;
+}
+ .h1text {
+     color: red;
+     font-size: 3rem;
+     padding: 7rem 0;
+     display: block;
+}
+
+.used-cars-details {
+  margin: 6rem; 
+  padding: 6rem 0;
+  display: block;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 2% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+
+.usedcar1 {
+	width: 23.8%;
+}
+.usedcar1 .usedcar1 img {
+        width: 100%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.usedcar1 { width: 100%; }
+}
+
+/* Made by Nathan just renamed and edited slightly to fit the my style for this page */
+.used-cars-Display-section {
+	text-align: center;
+	margin: auto auto;
+	height: 100%;
+}
+
+.used-cars-Display .grid {
+  min-width:30%;
+  min-height:20em;
+  line-height: 1.2;
+  display: inline-block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  border-radius: 25px;
+  color:#fff;
+  text-shadow: 2px 2px 2px #000;
+  margin: 5px;
+}
+
+.used-cars-Display .grid:before {
+  background-color: rgba(15,15,15,0.5);
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+  position: absolute;
+}
+.wrap {
+  width: 100%;
+  margin: 4rem;
+  overflow: hidden;
+  display: grid;
+
+}
+.used-cars-Display .grid:hover:before {
+  display: none;
+}
+
+.used-cars-Display .grid .textstyle {
+  position: absolute;
+  top: 40%;
+  text-align: left;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.75em;
+}
+
+.used-cars-Display .grid .textstyle .info {
+  display: none;
+}
+
+.used-cars-Display .grid:hover .textstyle .info {
+  display: block;
+}
+
+.used-cars-Display .grid:hover .textstyle .info h2 {
+  margin: 0;
+}
+
+#used-cars {
+  background-image: url('https://i.atcdn.co.uk/imgser-uk/imgser-uk/servlet/media.jpg?id=a1fb523018d74f5a85bcfb6cfaa7128b&width=1024&height=768');
+}
+#used-cars-clio {
+  background-image: url('https://i.atcdn.co.uk/imgser-uk/imgser-uk/servlet/media.jpg?id=4b3986d6b3e24765aa5bc005de9eef27&width=1024&height=768');
+}
+#used-cars-nissan {
+  background-image: url('https://i.atcdn.co.uk/imgser-uk/imgser-uk/servlet/media.jpg?id=e8d2b46b836b4ec9b285198744b12ee1&width=1024&height=768');
+}
+#used-cars-Vauxhall {
+  background-image: url('https://i.atcdn.co.uk/imgser-uk/imgser-uk/servlet/media.jpg?id=a3cd6ae6c4ba47f68eb38e749e76de70&width=1024&height=768');
+}
+
+#used-cars-Vauxhall-Meriva {
+  background-image: url('https://i.atcdn.co.uk/imgser-uk/imgser-uk/servlet/media.jpg?id=c2612a6659a94a29a746689247f78856&width=1024&height=768');
+}
+
+#used-cars-Mitsubishi {
+  background-image: url('https://i.atcdn.co.uk/imgser-uk/imgser-uk/servlet/media.jpg?id=42ad61e09dbd460190b038bab8f42f6a&width=1024&height=768');
+}
+
+.questions li { 
+	padding: 15px; 
+	list-style-type: none;
+}
+
+.questions li.question {
+  font-weight: bold;
+  font-size: 120%;
+  border-bottom: 1px #716a6a solid;
+  cursor: pointer;
+}
+
+.questions li.answer {
+  display: none;
+}
+
+#cardetails {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#cardetails td, #cardetails th {
+    padding: 8px;
+}
+
+#cardetails tr:nth-child(even){background-color: #f2f2f2;}
+
+#cardetails tr:hover {background-color: #ddd;}
+
+#cardetails th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+}

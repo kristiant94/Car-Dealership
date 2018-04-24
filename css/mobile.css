@@ -33,10 +33,12 @@
 
 @media (max-width: 768px) {
   .large-image-grid .tile {width: 50%;}
+  .used-cars-Display .grid {width: 50%;}
 }
 
 @media (max-width: 700px) {
   .large-image-grid .tile {width: 100%; border-radius: 0; margin: 0;}
+  .used-cars-Display .grid {width: 100%; border-radius: 0; margin: 0;}
 }
 
 @media screen and (max-width: 1024px) {
